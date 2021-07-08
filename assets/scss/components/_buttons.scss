@@ -2,7 +2,6 @@
   &:link,
   &:visited {
     background-color: $color-primary;
-    padding: 0.5rem 3rem;
     border-radius: 5px;
     font-size: 1.8rem;
     text-decoration: none;
@@ -10,6 +9,14 @@
     font-weight: $f-ultralight;
 
     transition: all 0.3s;
+  }
+
+  &--small {
+    padding: 0.5rem 3rem;
+  }
+
+  &--big {
+    padding: 1.5rem 2.5rem;
   }
 
   &:hover,
