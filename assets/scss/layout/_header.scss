@@ -1,0 +1,51 @@
+.header {
+  max-width: $row-big-width;
+  margin: 0 auto;
+  padding: 2.5rem;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+
+  &__logo-link {
+    width: 3rem;
+    height: 3.2rem;
+    padding: 0;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact-img {
+    display: inline-block;
+    height: 1.8rem;
+    width: 2.2rem;
+    margin-right: 0.8rem;
+  }
+
+  &__email {
+    &:link,
+    &:visited {
+      color: $text-black;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      font-size: 1.6rem;
+
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      text-decoration-color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@mixin generateFont(
+  $local-font,
+  $font-family,
+  $font-root,
+  $filename,
+  $weight,
+  $style
+) {
+  font-family: $font-family;
+  src: url("#{$font-root}#{$filename}.ttf") format("truetype");
+  font-weight: $weight;
+  font-style: $style;
+}
+@mixin generatePoppinsFont($filename, $weight, $style: normal) {
+  $font-root: "../fonts/Poppins/";
+  $font: "Poppins";
+  @include generateFont(
+    $filename,
+    $font,
+    $font-root,
+    $filename,
+    $weight,
+    $style
+  );
+}
+@mixin generateQuicksandFont($filename, $weight, $style: normal) {
+  $font-root: "../fonts/Quicksand/";
+  $font: "Quicksand";
+  @include generateFont(
+    $filename,
+    $font,
+    $font-root,
+    $filename,
+    $weight,
+    $style
+  );
+}
+
+@font-face {
+  @include generatePoppinsFont("Poppins-Regular", 400);
+}
+
+@font-face {
+  @include generateQuicksandFont("Quicksand-Regular", 400);
+}

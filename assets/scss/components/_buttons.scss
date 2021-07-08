@@ -1,0 +1,49 @@
+.btn {
+  &:link,
+  &:visited {
+    background-color: $color-primary;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: $f-ultralight;
+
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-secondary;
+    box-shadow: $shadow-light;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: $color-primary;
+    font-weight: $f-ultralight;
+
+    transition: all 0.3s;
+  }
+
+  &--arrow {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0;
+
+    &-icon {
+      margin-left: 1rem;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-secondary;
+    text-decoration-color: $color-secondary;
+  }
+}

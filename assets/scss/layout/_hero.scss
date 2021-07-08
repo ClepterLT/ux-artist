@@ -1,0 +1,67 @@
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    flex: 0 0 45%;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  &__right {
+    flex: 0 0 50%;
+    align-self: flex-end;
+
+    position: relative;
+  }
+
+  &__description {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    font-family: $font-secondary;
+    font-size: 2.2rem;
+    opacity: 0.5;
+    text-align: left;
+  }
+
+  &__additional-info {
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #000;
+    width: 20rem;
+  }
+
+  &__img-wrap {
+    width: 45rem;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__dots {
+    &--1 {
+      position: absolute;
+      top: 40rem;
+      left: 1.5rem;
+      z-index: -1;
+    }
+
+    &--2 {
+      position: absolute;
+      top: 10rem;
+      right: 1.5rem;
+      z-index: -1;
+    }
+  }
+}

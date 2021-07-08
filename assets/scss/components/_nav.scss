@@ -1,0 +1,38 @@
+.nav {
+  flex: 1;
+
+  &__list {
+    list-style: none;
+    margin-left: 8rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 3.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $text-black;
+      text-decoration: none;
+      font-size: 1.6rem;
+
+      transition: all 0.3s;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &__arrow {
+    margin-left: 0.8rem;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "horion-digital-front-end-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/scss/main.scss assets/css/app.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/scss/main.scss assets/css/app.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\"  assets/css/app.comp.css -o assets/css/app.prefix.css",
+    "compress:css": "node-sass assets/css/app.prefix.css assets/css/app.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Horion Digital",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  }
+}

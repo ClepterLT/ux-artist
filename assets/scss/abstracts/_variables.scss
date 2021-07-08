@@ -1,0 +1,37 @@
+// FONTS:
+
+$f-ultralight: 100;
+$f-extralight: 100;
+$f-semi-light: 200;
+$f-thin: 200;
+$f-light: 300;
+$f-regular: 400;
+$f-normal: 400;
+$f-medium: 500;
+$f-semibold: 600;
+$f-demibold: 600;
+$f-bold: 700;
+$f-heavy: 800;
+$f-extrabold: 800;
+$f-black: 900;
+
+$font-quicksand: "Quicksand", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+$font-main: $font-quicksand;
+$font-secondary: $font-poppins;
+
+// COLORS:
+$color-primary: #6e4fff;
+$color-secondary: #316aff;
+$color-tertiary: #f4f4f4;
+$color-quaternary: #faf2f2;
+
+$text-black: #141416;
+
+// ROWS:
+$row-width: 114rem;
+$row-big-width: 140rem;
+
+// SHADOWS
+$shadow-light: 0 0.3rem 1rem rgba($text-black, 0.2);

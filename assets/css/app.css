@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.5px;
+  color: #141416; }
+
+.heading-primary {
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 7.8rem;
+  letter-spacing: -2.8px;
+  color: #000; }
+
+.u-ml-3half {
+  margin-left: 3.5rem; }
+
+.nav {
+  flex: 1; }
+  .nav__list {
+    list-style: none;
+    margin-left: 8rem;
+    display: flex;
+    align-items: center; }
+  .nav__item {
+    margin-right: 3.5rem; }
+  .nav__link:link, .nav__link:visited {
+    color: #141416;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center; }
+  .nav__link:hover, .nav__link:active {
+    color: #6e4fff; }
+  .nav__arrow {
+    margin-left: 0.8rem; }
+
+.btn:link, .btn:visited {
+  background-color: #6e4fff;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  transition: all 0.3s; }
+
+.btn:hover, .btn:active {
+  background-color: #316aff;
+  box-shadow: 0 0.3rem 1rem rgba(20, 20, 22, 0.2); }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  color: #6e4fff;
+  font-weight: 100;
+  transition: all 0.3s; }
+
+.btn-text--arrow {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0; }
+  .btn-text--arrow-icon {
+    margin-left: 1rem; }
+
+.btn-text:hover, .btn-text:active {
+  color: #316aff;
+  text-decoration-color: #316aff; }
+
+.cta {
+  padding: 2rem 2rem 2rem 3rem;
+  margin-right: -38rem;
+  background-color: #316aff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .cta__dropdown:link, .cta__dropdown:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center; }
+  .cta__dropdown:hover, .cta__dropdown:active {
+    color: #141416; }
+  .cta__arrow {
+    margin-left: 1.3rem; }
+  .cta__map-pin {
+    margin-right: 1rem; }
+
+.header {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+  font-size: 16px;
+  display: flex;
+  align-items: center; }
+  .header__logo-link {
+    width: 3rem;
+    height: 3.2rem;
+    padding: 0; }
+  .header__logo {
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+  .header__contact {
+    display: flex;
+    align-items: center; }
+  .header__contact-img {
+    display: inline-block;
+    height: 1.8rem;
+    width: 2.2rem;
+    margin-right: 0.8rem; }
+  .header__email:link, .header__email:visited {
+    color: #141416;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-size: 1.6rem;
+    transition: all 0.3s; }
+  .header__email:hover, .header__email:active {
+    color: #6e4fff;
+    text-decoration-color: #6e4fff; }
+
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  .hero__wrap {
+    display: flex;
+    justify-content: space-between; }
+  .hero__left {
+    flex: 0 0 45%;
+    position: relative;
+    z-index: 10; }
+  .hero__right {
+    flex: 0 0 50%;
+    align-self: flex-end;
+    position: relative; }
+  .hero__description {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+    opacity: 0.5;
+    text-align: left; }
+  .hero__additional-info {
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #000;
+    width: 20rem; }
+  .hero__img-wrap {
+    width: 45rem;
+    margin: 0 auto;
+    z-index: 1; }
+  .hero__img {
+    width: 100%;
+    height: auto; }
+  .hero__dots--1 {
+    position: absolute;
+    top: 40rem;
+    left: 1.5rem;
+    z-index: -1; }
+  .hero__dots--2 {
+    position: absolute;
+    top: 10rem;
+    right: 1.5rem;
+    z-index: -1; }
+
+.news {
+  background-color: #faf2f2;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
