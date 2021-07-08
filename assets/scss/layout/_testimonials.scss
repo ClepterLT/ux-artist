@@ -1,0 +1,18 @@
+.testimonials {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: $color-tertiary;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    position: relative;
+    align-items: flex-start;
+  }
+}

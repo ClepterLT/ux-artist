@@ -13,10 +13,11 @@
 
 // 4. Components
 @import "components/nav", "components/buttons", "components/cta",
-  "components/posts";
+  "components/posts", "components/figures", "components/review";
 
 // 5. Layout-related sections
-@import "layout/header", "layout/footer", "layout/hero", "layout/blog";
+@import "layout/header", "layout/footer", "layout/hero", "layout/blog",
+  "layout/stats", "layout/testimonials";
 
 // 6. Page-specific styles
 // @import

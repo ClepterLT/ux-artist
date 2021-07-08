@@ -1,0 +1,54 @@
+.review {
+  background-color: $color-quinary;
+  border-radius: 10px;
+  padding: 4rem;
+  width: 45rem;
+
+  z-index: 10;
+
+  &__rating {
+    margin-bottom: 1rem;
+  }
+
+  &__star {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-size: 2.2rem;
+    opacity: 0.5;
+    text-align: left;
+  }
+
+  &__user {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__date {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #000;
+    opacity: 0.5;
+  }
+
+  &__dots {
+    position: absolute;
+
+    &--1 {
+      left: -2rem;
+      top: 17rem;
+    }
+
+    &--2 {
+      right: 0;
+      top: 11rem;
+    }
+  }
+}

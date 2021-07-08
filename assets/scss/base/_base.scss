@@ -15,3 +15,8 @@ html {
   max-width: $row-width;
   margin: 0 auto;
 }
+
+.row-small {
+  max-width: $row-small-width;
+  margin: 0 auto;
+}

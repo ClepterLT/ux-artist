@@ -1,0 +1,26 @@
+.stats {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__text {
+    flex: 0 0 40%;
+    margin-right: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__paragraph {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
