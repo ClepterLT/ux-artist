@@ -44,11 +44,35 @@
     &--1 {
       left: -2rem;
       top: 17rem;
+
+      @include respond(phone-land) {
+        height: 15rem;
+        left: -1.5rem;
+        top: 18rem;
+      }
+
+      @include respond(phone) {
+        height: 15rem;
+        left: 6rem;
+        top: 18rem;
+      }
     }
 
     &--2 {
       right: 0;
       top: 11rem;
+
+      @include respond(phone-land) {
+        height: 15rem;
+        right: 0;
+        top: 12rem;
+      }
+
+      @include respond(phone) {
+        height: 15rem;
+        right: 6rem;
+        top: 35rem;
+      }
     }
   }
 }

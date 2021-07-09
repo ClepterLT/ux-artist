@@ -14,5 +14,11 @@
 
     position: relative;
     align-items: flex-start;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
   }
 }

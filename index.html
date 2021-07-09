@@ -19,52 +19,62 @@
       <a href="#" class="header__logo-link"
         ><img src="assets/images/logo.svg" alt="Logo" class="header__logo"
       /></a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Explore<img
-                src="assets/images/arrow-down.svg"
-                alt="Arrow"
-                class="nav__arrow"
-              />
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Products<img
-                src="assets/images/arrow-down.svg"
-                alt="Arrow"
-                class="nav__arrow"
-              />
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              About<img
-                src="assets/images/arrow-down.svg"
-                alt="Arrow"
-                class="nav__arrow"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__contact">
-        <img
-          src="assets/images/email-icon.svg"
-          alt="E-mail img"
-          class="header__contact-img"
-        />
-        <a
-          href="mailto: uxstore@support.com"
-          class="header__email"
-          target="_blank"
-          >uxstore@support.com</a
-        >
+      <div class="header__wrap" id="header-wrap">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Explore<img
+                  src="assets/images/arrow-down.svg"
+                  alt="Arrow"
+                  class="nav__arrow"
+                />
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Products<img
+                  src="assets/images/arrow-down.svg"
+                  alt="Arrow"
+                  class="nav__arrow"
+                />
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                About<img
+                  src="assets/images/arrow-down.svg"
+                  alt="Arrow"
+                  class="nav__arrow"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact">
+          <img
+            src="assets/images/email-icon.svg"
+            alt="E-mail img"
+            class="header__contact-img"
+          />
+          <a
+            href="mailto: uxstore@support.com"
+            class="header__email"
+            target="_blank"
+            >uxstore@support.com</a
+          >
+        </div>
+        <a href="#" class="btn-text u-ml-3half">Sign In</a>
+        <a href="#" class="btn btn--small u-ml-3half">Try Now</a>
       </div>
-      <a href="#" class="btn-text u-ml-3half">Sign In</a>
-      <a href="#" class="btn btn--small u-ml-3half">Try Now</a>
+      <button type="button" class="nav__button">
+        <svg class="nav__icon js-nav-open">
+          <use xlink:href="../assets/images/menu-icons.svg#icon-menu"></use>
+        </svg>
+        <svg class="nav__icon js-nav-close nav__icon--hidden">
+          <use xlink:href="../assets/images/menu-icons.svg#icon-close"></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -388,5 +398,6 @@
     </main>
 
     <script type="text/javascript" src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../assets/js/mobile-menu.js"></script>
   </body>
 </html>
